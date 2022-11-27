@@ -1,0 +1,104 @@
+html {
+    font-family: 'Lobster', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(244, 189, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outer-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    padding: 0;
+}
+
+#title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#result {
+    text-align: center;
+    margin: 5px 0;
+}
+
+#scoreDisplay {
+    color: rgb(235, 39, 39);
+}
+
+#container {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.defaultCard {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+@Media (max-width: 1050px) {
+    #outer-container {
+        width: 80%;
+        min-width: 300px;
+    }
+}
+
+@Media (max-width: 780px) {
+
+    #title,
+    #result {
+        font-size: 1.2rem;
+    }
+
+    .defaultCard {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@Media (max-width: 500px) {
+
+    #outer-container {
+        max-width: 90%;
+    }
+
+    #container {
+        margin: 20px;
+    }
+
+    #title,
+    #result {
+        font-size: 1rem;
+    }
+
+    .defaultCard {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@Media (max-width: 500px) {
+    .defaultCard {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+}
